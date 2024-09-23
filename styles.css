@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Grand+Hotel&display=swap");
 /* 
 ==============
 css variables
@@ -122,13 +124,14 @@ navbar styles
 */
 .nav-btn {
   background: var(--primary-1);
-  background-color: var(--white);
+  background-color: transparent;
   font-size: 2.5rem;
   position: fixed;
   top: 5%;
   left: 5%;
   cursor: pointer;
   z-index: 1;
+  color: var(--red-1);
 }
 .navbar {
   background: var(--primary-4);
@@ -183,5 +186,71 @@ navbar styles
   .navbar {
     width: 30vw;
     max-width: 320px;
+  }
+}
+
+/* 
+==============
+header section
+==============
+*/
+
+.header {
+  background-color: var(--primary-3);
+  min-height: 100vh;
+  position: relative;
+}
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.banner h2 {
+  letter-spacing: var(--letter-spacing);
+  color: var(--red-2);
+  margin-bottom: 1.5rem;
+  font-family: "Grand Hotel", cursive;
+}
+.banner h1 {
+  letter-spacing: var(--letter-spacing);
+  color: #eec8d0;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.banner-btn {
+  padding: 0.75rem 1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: var(--red-3);
+  color: var(--primary-4);
+  font-size: 2rem;
+  offset: 2px solid red;
+  outline: 5px solid var(--primary-1);
+  outline-offset: 6px;
+  transition: var(--trasition);
+}
+.banner-btn:hover {
+  color: #b0a5d5;
+  transform: scale(1.02);
+}
+/* when the screen bicome bigger we change the bachground */
+
+@media screen and (min-width: 992px) {
+  .header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url(./images/bcg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .banner h2 {
+    font-size: 2.5rem;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+    color: var(--red-1);
+  }
+  .banner .btn {
+    background-color: transparent;
   }
 }
