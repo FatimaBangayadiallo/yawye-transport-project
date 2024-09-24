@@ -420,3 +420,61 @@ about section
     padding-left: 5rem;
   }
 }
+
+/* 
+================
+products section
+================
+*/
+.products {
+  background-color: lightblue;
+}
+.products article {
+  padding: 2rem 0;
+}
+.article-2-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem 4rem;
+}
+.cell {
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  color: var(--red-1);
+  transition: var(--trasition);
+}
+.cell:hover {
+  color: #222;
+}
+.product-info p {
+  max-width: 30rem;
+  line-height: 1.8;
+  text-transform: capitalize;
+  color: darkolivegreen;
+  margin-bottom: 1.5rem;
+}
+.product-btn {
+  padding: 0.75rem 1rem;
+  background-color: transparent;
+  border: 2px solid var(--red-1);
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+  color: var(--red-2);
+  transition: var(--trasition);
+}
+.product-btn:hover {
+  background-color: #624cab;
+  color: white;
+}
+@media screen and (min-width: 1100px) {
+  .products-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .article-2-grid {
+    justify-self: end;
+  }
+}
