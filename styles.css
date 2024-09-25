@@ -478,3 +478,106 @@ products section
     justify-self: end;
   }
 }
+
+/* 
+================
+services section
+================
+*/
+
+.services {
+  /* padding: 4rem 0; */
+}
+
+.services-title {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: -4rem;
+}
+.single-service {
+  margin: 2.5rem 0;
+  border-radius: var(--radius);
+  background-color: lightgray;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: var(--trasition);
+  position: relative;
+}
+
+.single-service:hover {
+  transform: scale(1.02);
+}
+.service-image-container {
+  position: relative;
+}
+.icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 2rem;
+  color: var(--red-1);
+  background-color: var(--white);
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-items: center;
+}
+.service-photo {
+  height: 17rem;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+.service-info {
+  text-align: center;
+  padding: 1rem 0;
+}
+.service-info h3 {
+  letter-spacing: var(--letter-spacing);
+  color: #aa0000;
+  margin-bottom: 1.3rem;
+}
+.service-info p {
+  max-width: 25rem;
+  margin: 0 auto;
+  margin-bottom: 1.4rem;
+  text-transform: capitalize;
+  color: darkolivegreen;
+}
+.service-btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: var(--letter-spacing);
+  color: #aa0000;
+  background-color: darkolivegreen;
+  border-radius: var(--radius);
+  transition: var(--trasition);
+}
+.service-btn:hover {
+  background-color: #222;
+
+  color: var(--white);
+}
+/* the layout */
+@media screen and (min-width: 768px) {
+  .services-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .services-center {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .services-center {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+  }
+}
