@@ -581,3 +581,93 @@ services section
     column-gap: 3rem;
   }
 }
+
+/* 
+===============
+contact section
+===============
+*/
+.contacts {
+  background-color: darkolivegreen;
+}
+.contact-form,
+.contact-info {
+  margin-bottom: 1.5rem;
+}
+.contact-item {
+  margin-bottom: 1.75rem;
+}
+.contact-title {
+  color: var(--primary-6);
+  letter-spacing: var(--letter-spacing);
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+.contact-text {
+  /* color: rgba(30, 143, 255, 0.931); */
+  color: var(--white);
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+}
+
+.contact-form {
+  background-color: wheat;
+  color: var(--red-1);
+  text-align: center;
+  border-radius: var(--radius);
+  transition: var(--trasition);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 35rem;
+}
+.contact-form:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.contact-form h3 {
+  padding-top: 1.25rem;
+}
+.form-groupe {
+  padding: 1rem 1.25rem;
+  /* border: 2px solid red; */
+}
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: none;
+  margin-bottom: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+  border-radius: var(--radius);
+}
+.form-control::placeholder {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: darkgray;
+  letter-spacing: var(--letter-spacing);
+  text-transform: uppercase;
+}
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
+  background-color: var(--red-2);
+  color: darkgray;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  letter-spacing: var(--letter-spacing);
+  border: none;
+  transition: var(--trasition);
+}
+.submit-btn:hover {
+  background-color: var(--white);
+}
+@media screen and (min-width: 992px) {
+  .contact-info,
+  .contact-form {
+    float: left;
+    width: 50%;
+  }
+}
