@@ -671,3 +671,35 @@ contact section
     width: 50%;
   }
 }
+
+/* 
+==============
+footer section
+==============
+*/
+
+.footer {
+  background-color: var(--red-2);
+}
+.footer-section-center {
+  display: grid;
+  place-items: center;
+}
+.footer-icons {
+  margin-bottom: 1rem;
+}
+.single-icon {
+  color: darkgray;
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+  transition: var(--trasition);
+}
+.single-icon:hover {
+  color: white;
+}
+.footer-text {
+  color: var(--primary-6);
+}
+.company {
+  color: #eec8d0;
+}
